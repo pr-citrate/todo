@@ -86,3 +86,26 @@
 - reduce inline-style styling
 - use sass, not css
 - write discription when you commit files
+
+## git/github
+
+### commands
+
+- `git init`
+  - create git repository
+- `git config --global (user.name/user.email) "[name/email"`
+- `git branch [branch]`
+  - create branch
+- `git branch -a`
+  - show every branch
+- `git checkout [branch]`
+  - seek branch
+- `git branch -d [branch]`
+  - delete branch
+- `git status`
+  - show file status
+- `git log`
+  - show commit or push log
+- `git push [remote] [branch]`
+  - push branch to remote repository. `origin` is suggested for `remote` argument
+-
