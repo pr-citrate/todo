@@ -108,4 +108,3 @@
   - show commit or push log
 - `git push [remote] [branch]`
   - push branch to remote repository. `origin` is suggested for `remote` argument
--
