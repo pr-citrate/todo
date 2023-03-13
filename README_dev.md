@@ -33,7 +33,15 @@
 
 </details>
 
-## Code Convention
+## Rules
+
+### Github
+
+- always use branch when configuring important things
+- do not delete other's branches
+- do not include api keys or token
+
+### Code Convention
 
 `.prettirrec`
 ```json
@@ -70,7 +78,7 @@
 - cases
   - use `lowerCamelCase` for js files
   - use `PascalCase` for components or classes
-  - use `kebab-case` for assets
+  - use `kebab-case` for assets or token
   - use `UPPER_CASE` for constants
 - never use abbreviations
 - flag variables should be named as `[(modal/auxility) vervs][type of flag]`
@@ -108,4 +116,5 @@
   - show commit or push log
 - `git push [remote] [branch]`
   - push branch to remote repository. `origin` is suggested for `remote` argument
--
+- `git commit -m [message]`
+  - commit changes to local
