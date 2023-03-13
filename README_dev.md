@@ -44,6 +44,7 @@
 ### Code Convention
 
 `.prettirrec`
+
 ```json
 {
     "arrowParens": "avoid",
