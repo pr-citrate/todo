@@ -1,4 +1,4 @@
-function Toolbar(props) {
+function Toolbar() {
     return (
         <>
 
