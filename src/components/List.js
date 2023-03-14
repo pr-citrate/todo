@@ -1,9 +1,11 @@
-import React from 'react';
+import ListItem from './ListItem';
 
 function List({ todos, setTodos }) {
   return (
     <div className='List'>
-      <p>abcd</p>
+      {todos.map((todo, index) => (
+        <ListItem key={index} todo={todo} setTodos={setTodos} />
+      ))}
     </div>
   );
 }

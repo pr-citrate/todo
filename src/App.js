@@ -1,4 +1,3 @@
-import './App.css';
 import React, { useState } from 'react';
 import Header from './Header';
 import Main from './Main';
@@ -11,7 +10,7 @@ function App() {
     <div className='App'>
       <Header />
       <Main todos={todos} setTodos={setTodos} />
-      <Footer />
+      <Footer></Footer>
     </div>
   );
 }
