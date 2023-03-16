@@ -3,7 +3,7 @@ import uuid from 'react-uuid';
 
 function Input({ todos, setTodos }) {
   const [inputText, setInputText] = React.useState('');
-  const addTodo = () => setTodos([...todos, { text: inputText, status: false, id: uuid() }]);
+  const addTodo = () => setTodos([...todos, { task: inputText, status: false, id: uuid() }]);
   const handleOnChange = e => {
     setInputText(e.target.value);
   };
