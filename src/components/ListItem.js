@@ -1,11 +1,6 @@
 function ListItem({ id, todos, setTodos }) {
   const handleDeleteOnClick = () => {
-    setTodos(
-      todos.splice(
-        todos.findIndex(obj => obj.id === id),
-        1
-      )
-    );
+    setTodos(todos.filter(obj => obj.id !== id));
   };
 
   return (
