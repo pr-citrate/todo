@@ -1,5 +1,6 @@
 import React from 'react';
 import uuid from 'react-uuid';
+
 function Input({ todos, setTodos }) {
   const [inputText, setInputText] = React.useState('');
   const addTodo = () => setTodos([...todos, { text: inputText, status: false, id: uuid() }]);
