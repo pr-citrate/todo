@@ -3,8 +3,8 @@ import ListItem from './ListItem';
 function List({ todos, setTodos }) {
   return (
     <div className='List'>
-      {todos.map((todo, index) => (
-        <ListItem key={index} todo={todo} setTodos={setTodos} />
+      {todos.map(todo => (
+        <ListItem key={todo.id} id={todo.id} todos={todos} setTodos={setTodos} />
       ))}
     </div>
   );
