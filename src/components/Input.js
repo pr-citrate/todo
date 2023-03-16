@@ -1,9 +1,10 @@
 import React from 'react';
+import uuid from 'react-uuid';
 function Input({ todos, setTodos }) {
-  const [text, setText] = React.useState('');
-  const addTodo = () => setTodos([...todos, text]);
+  const [inputText, setInputText] = React.useState('');
+  const addTodo = () => setTodos([...todos, { text: inputText, status: false, id: uuid() }]);
   const handleOnChange = e => {
-    setText(e.target.value);
+    setInputText(e.target.value);
   };
   const handleOnKeypress = e => {
     if (e.key === 'Enter') {
