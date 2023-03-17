@@ -1,0 +1,14 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4em;
+  margin-bottom: 2em;
+
+  .middle {
+    .title {
+      font-size: 2em;
+      font-weight: bold;
+    }
+  }
+}

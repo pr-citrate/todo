@@ -1,0 +1,24 @@
+.Input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .inputfield {
+    border-radius: 0.3em 0px 0px 0.3em;
+    border: 2px solid;
+    border-right-width: 1px;
+    height: 3em;
+    padding: 1em;
+    width: 25em;
+  }
+
+  .add-button {
+    border-radius: 0em 0.3em 0.3em 0em;
+    border: 2px solid;
+    border-left-width: 1px;
+    height: 3em;
+    width: 3em;
+    text-align: center;
+    background-color: white;
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import uuid from 'react-uuid';
+import './../styles/Input.scss';
 
 function Input({ todos, setTodos }) {
   const [inputText, setInputText] = React.useState('');
@@ -15,10 +16,10 @@ function Input({ todos, setTodos }) {
 
   return (
     <div className='Input'>
-      <div className='input-container'>
-        <input type='text' placeholder='What needs to be done?' onChange={handleOnChange} onKeyPress={handleOnKeypress} />
-        <button onClick={addTodo}>Add</button>
-      </div>
+      <input className='inputfield' type='text' placeholder='What needs to be done?' onChange={handleOnChange} onKeyPress={handleOnKeypress} />
+      <button className='add-button' onClick={addTodo}>
+        Add
+      </button>
     </div>
   );
 }

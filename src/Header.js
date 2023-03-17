@@ -1,10 +1,16 @@
 import Toolbar from './components/Toolbar';
+import './styles/Header.scss';
 
 function Header({ todos, setTodos }) {
   return (
     <div className='Header'>
-      <h1 className='Header-title'>TODO</h1>
-      <Toolbar className='Header-toolbar' todos={todos} setTodos={setTodos} />
+      <div className='left'>
+        <Toolbar todos={todos} setTodos={setTodos} />
+      </div>
+      <div className='middle'>
+        <h1 className='title'>TODO</h1>
+      </div>
+      <div className='right'></div>
     </div>
   );
 }
