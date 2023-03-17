@@ -1,4 +1,5 @@
 import CheckButton from './CheckButton';
+import './../styles/Listitem.scss';
 
 function ListItem({ id, todos, setTodos }) {
   const handleDeleteOnClick = () => {
