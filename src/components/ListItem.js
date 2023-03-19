@@ -17,12 +17,16 @@ function ListItem({ id, todos, setTodos }) {
 
   return (
     <div className='ListItem'>
-      <CheckButton onClick={handleCheckButtonOnClick} status={findTodo().status} />
-      <p className='Listitem-value'>{findTodo().task}</p>
-      <button className='Listitem-button-edit'>edit</button>
-      <button className='Listitem-button-delete' onClick={handleDeleteOnClick}>
-        delete
-      </button>
+      <div className='text'>
+        <CheckButton onClick={handleCheckButtonOnClick} status={findTodo().status} />
+        <input className='task' placeholder={findTodo().task} disabled={true}></input>
+      </div>
+      <div className='buttons'>
+        <button className='button edit'>edit</button>
+        <button className='button delete' onClick={handleDeleteOnClick}>
+          delete
+        </button>
+      </div>
     </div>
   );
 }
