@@ -24,7 +24,7 @@ function ListItem({ id, todos, setTodos }) {
 
   const handleTaskOnChange = event => {
     setIsEditing(true);
-    setTodos(todos.map(obj => (obj.id !== id ? obj : { ...obj, task: event.target.value })));
+    setTodos(todos.map(obj => (obj.id === id && event.target.value.trim() === '' ? { ...obj, task: event.target.value } : obj)));
   };
 
   const handleTaskOnBlur = () => {
