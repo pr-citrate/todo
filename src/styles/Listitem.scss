@@ -1,5 +1,30 @@
 .ListItem {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   width: 30em;
+
+  // prettier-ignore
+  .text, .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .task {
+    border: 0;
+    background-color: white;
+    &::placeholder {
+      color: black;
+    }
+  }
+
+  .button {
+    background-color: white;
+    height: 2em;
+    margin: 0.1em;
+    border-radius: 0.3em;
+    border: 2px solid black;
+  }
 }
