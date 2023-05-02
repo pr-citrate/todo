@@ -2,13 +2,15 @@ import React from 'react';
 
 function Toolbar() {
   const handleCLick = () => {
-    alert('yes! just do it!!!!');
+    alert('hello');
+    
   };
  
   return <div className='Toolbar'>
-    <button className='' onClick={handleCLick}> click here~ </button>
+    <button className='Toolbtn' onClick={handleCLick}> ≡ </button>
+  
   </div>;
 }
 
 export default Toolbar;
- 
+  
