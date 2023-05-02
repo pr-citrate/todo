@@ -7,7 +7,7 @@ function Toolbar() {
   };
  
   return <div className='Toolbar'>
-    <button className='Toolbtn' onClick={handleCLick}><img src='./../assets/menu-icon.svg' alt='menu-icon' /></button>
+    <button className='Toolbtn' onClick={handleCLick}><img src='./../../assets/menu-icon.svg' alt='menu-icon' /></button>
   
   </div>;
 }
